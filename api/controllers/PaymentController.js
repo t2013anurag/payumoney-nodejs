@@ -9,9 +9,9 @@
 module.exports = {
 	'index' : function(req, res) {
 
-		/* the test params */
-		var key = 'kgJ4kDdQ';
-		var salt = 'wsU5ER4p7J';
+		/* the test params provided by PayUMoney */
+		var key = 'rjQUPktU';
+		var salt = 'e5iIg1jwi8';
 
 		var txnid = "";
 		var length = 10; // 10 digits random transaction ID.
@@ -57,6 +57,7 @@ module.exports = {
 
 		// Note - PayUMoney Server only accepts request in form type data.
 		var request = require('request');
+		// for live key and salt - use 'https://secure.payu.in/_payment' 
 		request.post('https://test.payu.in/_payment', {form: formData}, function(err, response, body) {
 			var location = response.caseless.dict.location;
 			res.redirect(location);
