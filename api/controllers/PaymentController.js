@@ -10,8 +10,8 @@ module.exports = {
 	'index' : function(req, res) {
 
 		/* the test params */
-		var key = 'rjQUPktU';
-		var salt = 'e5iIg1jwi8';
+		var key = 'kgJ4kDdQ';
+		var salt = 'wsU5ER4p7J';
 
 		var txnid = "";
 		var length = 10; // 10 digits random transaction ID.
