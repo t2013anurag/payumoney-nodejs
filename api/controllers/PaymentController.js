@@ -10,8 +10,8 @@ module.exports = {
 	'index' : function(req, res) {
 
 		/* the test params */
-		var key = 'tqB2AthR';
-		var salt = 'j5OQnEG6bt';
+		var key = 'rjQUPktU';
+		var salt = 'e5iIg1jwi8';
 
 		var txnid = "";
 		var length = 10; // 10 digits random transaction ID.
@@ -28,8 +28,8 @@ module.exports = {
     	var phone = '9999111111';
 
     	// The surl and furl are the success and the failure url's. Change accordingly.
-    	var surl = 'http://localhost.com/Payment/success';
-    	var furl = 'http://localhost.com/Payment/failure';
+    	var surl = 'http://localhost.com:1337/Payment/success';
+    	var furl = 'http://localhost.com:1337/Payment/failure';
 
     	// string hash format
     	var str = key + '|' + txnid + '|' + amount + '|' + productinfo + '|' + firstname + '|' + email + '|' +
