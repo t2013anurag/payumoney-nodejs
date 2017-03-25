@@ -32,10 +32,13 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    view: 'homepage'
-  }
-
+  '/': 'PaymentController.index',
+  '/payment/success' : {
+    view: 'success'
+  },
+  '/payment/failure' : {
+    view: 'failure'
+  },
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
