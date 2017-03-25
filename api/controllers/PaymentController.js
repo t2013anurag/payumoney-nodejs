@@ -57,7 +57,7 @@ module.exports = {
 
 		// Note - PayUMoney Server only accepts request in form type data.
 		var request = require('request');
-		request.post('https://secure.payu.in/_payment', {form: formData}, function(err, response, body) {
+		request.post('https://test.payu.in/_payment', {form: formData}, function(err, response, body) {
 			var location = response.caseless.dict.location;
 			res.redirect(location);
 		});
